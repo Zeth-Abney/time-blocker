@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		173CAA1D2D2CD915008E81B9 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 173CAA1C2D2CD915008E81B9 /* CalendarKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		173CA9FF2D2CD3FD008E81B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173CAA1D2D2CD915008E81B9 /* CalendarKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "time-blocker";
 			packageProductDependencies = (
+				173CAA1C2D2CD915008E81B9 /* CalendarKit */,
 			);
 			productName = "time-blocker";
 			productReference = 173CA9EC2D2CD3FC008E81B9 /* time-blocker.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 173CA9E32D2CD3FC008E81B9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				173CAA1B2D2CD915008E81B9 /* XCRemoteSwiftPackageReference "CalendarKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 173CA9ED2D2CD3FC008E81B9 /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		173CAA1B2D2CD915008E81B9 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		173CAA1C2D2CD915008E81B9 /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173CAA1B2D2CD915008E81B9 /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 173CA9E42D2CD3FC008E81B9 /* Project object */;
 }
